@@ -10,9 +10,9 @@ function setup() {
     //make a new facemesh method
     facemesh = ml5.facemesh(video, modelLoaded)
 
-    facemesh.on('predict', resuts => {
+    facemesh.on('predict', results => {
         predictions = results;
-        console.log(results);
+        console.log(predictions);
     });
 
     video.hide();
